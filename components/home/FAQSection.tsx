@@ -41,6 +41,7 @@ export default function FAQSection() {
                                 <button
                                     onClick={() => setOpenIndex(openIndex === i ? null : i)}
                                     className="w-full flex items-center justify-between gap-4 px-6 py-5 text-left"
+                                    aria-expanded={openIndex === i}
                                 >
                                     <span className="text-brand-white text-[15px] font-medium leading-snug">
                                         {t(faq.qKey)}

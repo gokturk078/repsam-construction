@@ -7,6 +7,7 @@ import Footer from '@/components/layout/Footer'
 import SectionLabel from '@/components/ui/SectionLabel'
 import AnimatedSection from '@/components/ui/AnimatedSection'
 import SmartImage from '@/components/ui/SmartImage'
+import PageHero from '@/components/ui/PageHero'
 import CTAStrip from '@/components/home/CTAStrip'
 import { getImageById } from '@/lib/images'
 import { useLang } from '@/lib/i18n'
@@ -37,29 +38,28 @@ const TEAM_KEYS: { nameKey: TranslationKey; roleKey: TranslationKey; bioKey: Tra
     { nameKey: 'team3_name', roleKey: 'team3_role', bioKey: 'team3_bio' },
 ]
 
+const TEAM_GRADIENTS = [
+    'from-amber-900/30 to-[#111]',
+    'from-emerald-900/30 to-[#111]',
+    'from-blue-900/30 to-[#111]',
+]
+
 export default function AboutPage() {
     const { t } = useLang()
+    const heroImg = getImageById('hero-secondary')
 
     return (
         <main>
             <Navbar />
-
-            {/* Page Hero */}
-            <section className="relative h-[60vh] min-h-[400px] flex items-center justify-center overflow-hidden">
-                {(() => { const img = getImageById('hero-secondary'); return img ? <SmartImage src={img.src} fallbackSrc={img.fallbackSrc} alt="About Repsam" fill priority sizes="100vw" /> : null })()}
-                <div className="absolute inset-0 bg-brand-black/70" />
-                <div className="relative z-10 text-center px-6">
-                    <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-                        <SectionLabel centered>{t('about_page_label')}</SectionLabel>
-                        <h1 className="font-serif text-brand-white font-bold" style={{ fontSize: 'clamp(2.5rem, 6vw, 4.5rem)' }}>
-                            {t('about_page_title')}
-                        </h1>
-                        <p className="text-brand-gray mt-3 text-[14px]">
-                            {t('breadcrumb_home')} / <span className="text-brand-gold">{t('nav_about')}</span>
-                        </p>
-                    </motion.div>
-                </div>
-            </section>
+            <PageHero
+                imageSrc={heroImg?.src}
+                imageFallback={heroImg?.fallbackSrc}
+                alt="About Repsam"
+                label={t('about_page_label')}
+                title={t('about_page_title')}
+                breadcrumbHome={t('breadcrumb_home')}
+                breadcrumbCurrent={t('nav_about')}
+            />
 
             {/* Timeline */}
             <section className="section-padding bg-brand-black">
@@ -172,13 +172,19 @@ export default function AboutPage() {
                         {TEAM_KEYS.map((member, i) => (
                             <AnimatedSection key={member.nameKey} variant="scaleIn" delay={i * 0.5}>
                                 <div className="bg-[#111] border border-[#222] hover:border-brand-gold/50 transition-all duration-300 hover:scale-[1.02] overflow-hidden">
-                                    <div className="relative h-64 bg-brand-navy-light">
-                                        {(() => { const img = getImageById('team-site-visit'); return img ? <SmartImage src={img.src} fallbackSrc={img.fallbackSrc} alt={t(member.nameKey)} fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover opacity-60" /> : null })()}
+                                    <div className={`relative h-64 bg-gradient-to-b ${TEAM_GRADIENTS[i]}`}>
+                                        {(() => { const img = getImageById('team-site-visit'); return img ? <SmartImage src={img.src} fallbackSrc={img.fallbackSrc} alt={t(member.nameKey)} fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover opacity-40" /> : null })()}
                                         <div className="absolute inset-0 bg-gradient-to-t from-[#111] via-transparent to-transparent" />
+                                        {/* Initials badge */}
+                                        <div className="absolute bottom-4 right-4 w-12 h-12 rounded-full bg-brand-gold/20 border border-brand-gold/40 flex items-center justify-center">
+                                            <span className="font-serif text-brand-gold text-[18px] font-bold">
+                                                {t(member.nameKey).split(' ').map(w => w[0]).join('')}
+                                            </span>
+                                        </div>
                                     </div>
                                     <div className="p-6">
                                         <h4 className="font-serif text-brand-white text-[20px] font-bold">{t(member.nameKey)}</h4>
-                                        <p className="text-brand-gold text-[13px] mt-1" style={{ fontFamily: 'Montserrat, sans-serif' }}>{t(member.roleKey)}</p>
+                                        <p className="text-brand-gold text-[13px] mt-1" style={{ fontFamily: 'var(--font-montserrat), sans-serif' }}>{t(member.roleKey)}</p>
                                         <p className="text-brand-gray text-[14px] mt-3 leading-relaxed">{t(member.bioKey)}</p>
                                     </div>
                                 </div>
@@ -190,11 +196,11 @@ export default function AboutPage() {
 
             {/* Mini Gallery Strip */}
             <section className="py-12 bg-brand-black overflow-hidden">
-                <div className="flex gap-4 animate-marquee" style={{ width: 'max-content' }}>
-                    {['project-villa-01', 'project-commercial-01', 'interior-living-01', 'project-complex-01', 'construction-site-01', 'project-apartments-01'].map((id) => {
+                <div className="flex gap-4 animate-marquee will-change-transform" style={{ width: 'max-content' }}>
+                    {[...'project-villa-01,project-commercial-01,interior-living-01,project-complex-01,construction-site-01,project-apartments-01'.split(','), ...'project-villa-01,project-commercial-01,interior-living-01,project-complex-01,construction-site-01,project-apartments-01'.split(',')].map((id, idx) => {
                         const img = getImageById(id); if (!img) return null;
                         return (
-                            <div key={id} className="relative w-64 h-40 shrink-0 overflow-hidden">
+                            <div key={`${id}-${idx}`} className="relative w-64 h-40 shrink-0 overflow-hidden">
                                 <SmartImage src={img.src} fallbackSrc={img.fallbackSrc} alt={id} fill sizes="256px" className="object-cover project-img" />
                             </div>
                         )

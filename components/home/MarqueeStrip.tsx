@@ -13,7 +13,7 @@ export default function MarqueeStrip() {
                     <span
                         key={i}
                         className="text-brand-black text-[12px] font-bold tracking-[3px] mx-4"
-                        style={{ fontFamily: 'Montserrat, sans-serif' }}
+                        style={{ fontFamily: 'var(--font-montserrat), sans-serif' }}
                     >
                         {text}
                     </span>

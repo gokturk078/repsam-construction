@@ -26,7 +26,7 @@ export default function TrustStrip() {
                     <div key={i} className="flex items-center gap-3 shrink-0">
                         <span
                             className="text-white/25 text-[11px] tracking-[3px] hover:text-brand-gold transition-colors duration-300"
-                            style={{ fontFamily: 'Montserrat, sans-serif' }}
+                            style={{ fontFamily: 'var(--font-montserrat), sans-serif' }}
                         >
                             {item}
                         </span>

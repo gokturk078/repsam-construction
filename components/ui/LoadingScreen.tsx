@@ -39,7 +39,7 @@ export default function LoadingScreen() {
                         </span>
                         <span
                             className="text-brand-gold text-[10px] md:text-[12px] tracking-[6px]"
-                            style={{ fontFamily: 'Montserrat, sans-serif' }}
+                            style={{ fontFamily: 'var(--font-montserrat), sans-serif' }}
                         >
                             CONSTRUCTION
                         </span>

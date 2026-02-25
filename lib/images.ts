@@ -74,7 +74,7 @@ const STATIC_IMAGES: ProjectImage[] = [
         usage: "projects_gallery",
         width: 1200, height: 800, blurDataURL: BLUR,
         src: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=90",
-        fallbackSrc: "https://images.unsplash.com/photo-1541888086425-d81bb19240f5?w=1200&q=90"
+        fallbackSrc: "https://images.unsplash.com/photo-1590486803833-1c5dc8ddd4c8?w=1200&q=90"
     },
     {
         id: "construction-site-02",
@@ -82,7 +82,7 @@ const STATIC_IMAGES: ProjectImage[] = [
         category: "construction",
         usage: "projects_gallery",
         width: 1200, height: 800, blurDataURL: BLUR,
-        src: "https://images.unsplash.com/photo-1541888086425-d81bb19240f5?w=1200&q=90",
+        src: "https://images.unsplash.com/photo-1590486803833-1c5dc8ddd4c8?w=1200&q=90",
         fallbackSrc: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=90"
     },
     {
@@ -191,7 +191,7 @@ const STATIC_IMAGES: ProjectImage[] = [
         usage: "why_us_section",
         width: 1200, height: 800, blurDataURL: BLUR,
         src: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=90",
-        fallbackSrc: "https://images.unsplash.com/photo-1541888086425-d81bb19240f5?w=1200&q=90"
+        fallbackSrc: "https://images.unsplash.com/photo-1590486803833-1c5dc8ddd4c8?w=1200&q=90"
     }
 ]
 

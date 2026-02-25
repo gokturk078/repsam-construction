@@ -8,9 +8,8 @@ import { z } from 'zod'
 import { MapPin, Phone, Mail, Clock, Instagram, CheckCircle, AlertCircle } from 'lucide-react'
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
-import SectionLabel from '@/components/ui/SectionLabel'
 import AnimatedSection from '@/components/ui/AnimatedSection'
-import SmartImage from '@/components/ui/SmartImage'
+import PageHero from '@/components/ui/PageHero'
 import GoldButton from '@/components/ui/GoldButton'
 import { getImageById } from '@/lib/images'
 import { useLang } from '@/lib/i18n'
@@ -27,12 +26,20 @@ const contactSchema = z.object({
 
 type ContactFormData = z.infer<typeof contactSchema>
 
-const CONTACT_INFO: { icon: typeof MapPin; labelKey: TranslationKey; valueKey?: TranslationKey; staticValue?: string }[] = [
+interface ContactItem {
+    icon: typeof MapPin
+    labelKey: TranslationKey
+    valueKey?: TranslationKey
+    staticValue?: string
+    href?: string
+}
+
+const CONTACT_INFO: ContactItem[] = [
     { icon: MapPin, labelKey: 'ci_address', valueKey: 'ci_address_val' },
-    { icon: Phone, labelKey: 'ci_phone', staticValue: '+90 (533) 840 50 60' },
-    { icon: Mail, labelKey: 'ci_email', staticValue: 'info@repsamconstruction.com' },
+    { icon: Phone, labelKey: 'ci_phone', staticValue: '+90 (533) 840 50 60', href: 'tel:+905338405060' },
+    { icon: Mail, labelKey: 'ci_email', staticValue: 'info@repsamconstruction.com', href: 'mailto:info@repsamconstruction.com' },
     { icon: Clock, labelKey: 'ci_hours', valueKey: 'ci_hours_val' },
-    { icon: Instagram, labelKey: 'ci_instagram', staticValue: '@repsam_construction.cyp' },
+    { icon: Instagram, labelKey: 'ci_instagram', staticValue: '@repsam_construction.cyp', href: 'https://instagram.com/repsam_construction.cyp' },
 ]
 
 const PROJECT_TYPE_KEYS: TranslationKey[] = [
@@ -46,6 +53,7 @@ const BUDGET_KEYS: TranslationKey[] = [
 export default function ContactPage() {
     const { t } = useLang()
     const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
+    const heroImg = getImageById('blueprint-planning')
 
     const {
         register,
@@ -80,22 +88,15 @@ export default function ContactPage() {
     return (
         <main>
             <Navbar />
-
-            <section className="relative h-[50vh] min-h-[350px] flex items-center justify-center overflow-hidden">
-                {(() => { const img = getImageById('blueprint-planning'); return img ? <SmartImage src={img.src} fallbackSrc={img.fallbackSrc} alt="Contact" fill priority sizes="100vw" /> : null })()}
-                <div className="absolute inset-0 bg-brand-black/75" />
-                <div className="relative z-10 text-center px-6">
-                    <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-                        <SectionLabel centered>{t('contact_label')}</SectionLabel>
-                        <h1 className="font-serif text-brand-white font-bold" style={{ fontSize: 'clamp(2.5rem, 6vw, 4.5rem)' }}>
-                            {t('contact_title')}
-                        </h1>
-                        <p className="text-brand-gray mt-3 text-[14px]">
-                            {t('breadcrumb_home')} / <span className="text-brand-gold">{t('nav_contact')}</span>
-                        </p>
-                    </motion.div>
-                </div>
-            </section>
+            <PageHero
+                imageSrc={heroImg?.src}
+                imageFallback={heroImg?.fallbackSrc}
+                alt="Contact"
+                label={t('contact_label')}
+                title={t('contact_title')}
+                breadcrumbHome={t('breadcrumb_home')}
+                breadcrumbCurrent={t('nav_contact')}
+            />
 
             {/* Contact Content */}
             <section className="section-padding bg-brand-black">
@@ -135,14 +136,15 @@ export default function ContactPage() {
                                 </motion.div>
                             )}
 
-                            <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
+                            <form onSubmit={handleSubmit(onSubmit)} className="space-y-5" noValidate>
                                 <div>
-                                    <label className={labelClasses} style={{ fontFamily: 'Montserrat, sans-serif' }}>
+                                    <label className={labelClasses} style={{ fontFamily: 'var(--font-montserrat), sans-serif' }}>
                                         {t('form_name')} *
                                     </label>
                                     <input
                                         {...register('fullName')}
                                         placeholder={t('ph_fullname')}
+                                        autoComplete="name"
                                         className={inputClasses}
                                     />
                                     {errors.fullName && (
@@ -152,12 +154,14 @@ export default function ContactPage() {
 
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                                     <div>
-                                        <label className={labelClasses} style={{ fontFamily: 'Montserrat, sans-serif' }}>
+                                        <label className={labelClasses} style={{ fontFamily: 'var(--font-montserrat), sans-serif' }}>
                                             {t('form_email')} *
                                         </label>
                                         <input
                                             {...register('email')}
                                             type="email"
+                                            inputMode="email"
+                                            autoComplete="email"
                                             placeholder="your@email.com"
                                             className={inputClasses}
                                         />
@@ -166,11 +170,13 @@ export default function ContactPage() {
                                         )}
                                     </div>
                                     <div>
-                                        <label className={labelClasses} style={{ fontFamily: 'Montserrat, sans-serif' }}>
+                                        <label className={labelClasses} style={{ fontFamily: 'var(--font-montserrat), sans-serif' }}>
                                             {t('form_phone')}
                                         </label>
                                         <input
                                             {...register('phone')}
+                                            inputMode="tel"
+                                            autoComplete="tel"
                                             placeholder="+90 (533) 840 50 60"
                                             className={inputClasses}
                                         />
@@ -179,7 +185,7 @@ export default function ContactPage() {
 
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                                     <div>
-                                        <label className={labelClasses} style={{ fontFamily: 'Montserrat, sans-serif' }}>
+                                        <label className={labelClasses} style={{ fontFamily: 'var(--font-montserrat), sans-serif' }}>
                                             {t('form_type')} *
                                         </label>
                                         <select {...register('projectType')} className={inputClasses}>
@@ -195,7 +201,7 @@ export default function ContactPage() {
                                         )}
                                     </div>
                                     <div>
-                                        <label className={labelClasses} style={{ fontFamily: 'Montserrat, sans-serif' }}>
+                                        <label className={labelClasses} style={{ fontFamily: 'var(--font-montserrat), sans-serif' }}>
                                             {t('form_budget')} *
                                         </label>
                                         <select {...register('budget')} className={inputClasses}>
@@ -213,7 +219,7 @@ export default function ContactPage() {
                                 </div>
 
                                 <div>
-                                    <label className={labelClasses} style={{ fontFamily: 'Montserrat, sans-serif' }}>
+                                    <label className={labelClasses} style={{ fontFamily: 'var(--font-montserrat), sans-serif' }}>
                                         {t('form_message')} *
                                     </label>
                                     <textarea
@@ -243,24 +249,41 @@ export default function ContactPage() {
                             </h3>
 
                             <div className="space-y-5 mb-10">
-                                {CONTACT_INFO.map((item) => (
-                                    <div key={item.labelKey} className="flex items-start gap-4">
-                                        <div className="w-10 h-10 shrink-0 flex items-center justify-center border border-brand-gold/30 bg-brand-gold/5">
-                                            <item.icon size={18} className="text-brand-gold" />
+                                {CONTACT_INFO.map((item) => {
+                                    const value = item.valueKey ? t(item.valueKey) : item.staticValue
+                                    const content = (
+                                        <div className="flex items-start gap-4 group">
+                                            <div className="w-10 h-10 shrink-0 flex items-center justify-center border border-brand-gold/30 bg-brand-gold/5 group-hover:bg-brand-gold/10 transition-colors">
+                                                <item.icon size={18} className="text-brand-gold" />
+                                            </div>
+                                            <div>
+                                                <p
+                                                    className="text-brand-gold text-[11px] tracking-[1.5px] uppercase"
+                                                    style={{ fontFamily: 'var(--font-montserrat), sans-serif' }}
+                                                >
+                                                    {t(item.labelKey)}
+                                                </p>
+                                                <p className={`text-brand-white text-[14px] mt-0.5 ${item.href ? 'group-hover:text-brand-gold transition-colors' : ''}`}>
+                                                    {value}
+                                                </p>
+                                            </div>
                                         </div>
-                                        <div>
-                                            <p
-                                                className="text-brand-gold text-[11px] tracking-[1.5px] uppercase"
-                                                style={{ fontFamily: 'Montserrat, sans-serif' }}
+                                    )
+
+                                    if (item.href) {
+                                        return (
+                                            <a
+                                                key={item.labelKey}
+                                                href={item.href}
+                                                target={item.href.startsWith('http') ? '_blank' : undefined}
+                                                rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}
                                             >
-                                                {t(item.labelKey)}
-                                            </p>
-                                            <p className="text-brand-white text-[14px] mt-0.5">
-                                                {item.valueKey ? t(item.valueKey) : item.staticValue}
-                                            </p>
-                                        </div>
-                                    </div>
-                                ))}
+                                                {content}
+                                            </a>
+                                        )
+                                    }
+                                    return <div key={item.labelKey}>{content}</div>
+                                })}
                             </div>
 
                             {/* Map */}
@@ -273,7 +296,7 @@ export default function ContactPage() {
                                     allowFullScreen
                                     loading="lazy"
                                     referrerPolicy="no-referrer-when-downgrade"
-                                    title="Repsam Construction Location - Kyrenia, North Cyprus"
+                                    title="Repsam Construction Location — Kyrenia, North Cyprus"
                                 />
                             </div>
                         </AnimatedSection>

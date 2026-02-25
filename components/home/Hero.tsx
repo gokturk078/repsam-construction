@@ -101,32 +101,32 @@ export default function Hero() {
                         animate={{ clipPath: 'inset(0 0 0 0)', opacity: 1 }}
                         transition={{ duration: 0.6, delay: 0.4 }}
                         className="text-brand-gold text-[11px] tracking-[5px] mb-8"
-                        style={{ fontFamily: 'Montserrat, sans-serif' }}
+                        style={{ fontFamily: 'var(--font-montserrat), sans-serif' }}
                     >
                         {t('hero_eyebrow')}
                     </motion.p>
 
                     {/* Title Line 1 — clip reveal */}
-                    <div className="overflow-hidden">
+                    <div className="overflow-hidden py-1">
                         <motion.h1
                             initial={{ y: '100%' }}
                             animate={{ y: 0 }}
                             transition={{ duration: 0.9, delay: 0.5, ease: [0.25, 0.1, 0.25, 1] }}
-                            className="font-serif font-bold text-brand-white leading-[0.92] tracking-tight"
-                            style={{ fontSize: 'clamp(3rem, 8vw, 7rem)' }}
+                            className="font-serif font-bold text-brand-white leading-[1.08] tracking-tight"
+                            style={{ fontSize: 'clamp(2.8rem, 7vw, 5.5rem)' }}
                         >
                             {t('hero_line1')}
                         </motion.h1>
                     </div>
 
                     {/* Title Line 2 — clip reveal with stagger */}
-                    <div className="overflow-hidden">
+                    <div className="overflow-hidden py-1">
                         <motion.h1
                             initial={{ y: '100%' }}
                             animate={{ y: 0 }}
                             transition={{ duration: 0.9, delay: 0.7, ease: [0.25, 0.1, 0.25, 1] }}
-                            className="font-serif font-bold italic leading-[0.92] tracking-tight bg-gradient-to-r from-brand-gold via-yellow-400 to-brand-gold bg-clip-text text-transparent"
-                            style={{ fontSize: 'clamp(3rem, 8vw, 7rem)' }}
+                            className="font-serif font-bold italic leading-[1.08] tracking-tight bg-gradient-to-r from-brand-gold via-yellow-400 to-brand-gold bg-clip-text text-transparent"
+                            style={{ fontSize: 'clamp(2.8rem, 7vw, 5.5rem)' }}
                         >
                             {t('hero_line2')}
                         </motion.h1>
@@ -146,7 +146,7 @@ export default function Hero() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 1.0 }}
                         className="text-[#B0B0B0] text-[15px] md:text-[18px] leading-[1.8] max-w-xl"
-                        style={{ fontFamily: 'Inter, sans-serif' }}
+                        style={{ fontFamily: 'var(--font-inter), sans-serif' }}
                     >
                         {t('hero_subtitle')}
                     </motion.p>
@@ -161,7 +161,7 @@ export default function Hero() {
                         <Link
                             href="/projects"
                             className="btn-shimmer inline-flex items-center justify-center px-8 lg:px-10 py-4 lg:py-5 bg-brand-gold text-brand-black text-[11px] lg:text-[12px] font-bold tracking-[2px] hover:bg-brand-gold-light transition-all duration-300 min-h-[48px]"
-                            style={{ fontFamily: 'Montserrat, sans-serif' }}
+                            style={{ fontFamily: 'var(--font-montserrat), sans-serif' }}
                         >
                             {t('hero_btn1')}
                         </Link>
@@ -188,7 +188,7 @@ export default function Hero() {
                         ].map((s) => (
                             <div key={s.label}>
                                 <p className="text-brand-gold text-[22px] lg:text-[28px] font-serif font-bold">{s.num}</p>
-                                <p className="text-white/40 text-[9px] lg:text-[10px] tracking-[1px] mt-1" style={{ fontFamily: 'Montserrat, sans-serif' }}>{s.label}</p>
+                                <p className="text-white/40 text-[9px] lg:text-[10px] tracking-[1px] mt-1" style={{ fontFamily: 'var(--font-montserrat), sans-serif' }}>{s.label}</p>
                             </div>
                         ))}
                     </motion.div>
@@ -203,7 +203,7 @@ export default function Hero() {
                 className="absolute top-24 right-8 lg:right-16 backdrop-blur-md border border-brand-gold/30 border-pulse px-5 py-4 hidden lg:block glow-gold"
                 style={{ background: 'linear-gradient(135deg, rgba(201,168,92,0.12), rgba(10,10,10,0.95))' }}
             >
-                <p className="text-brand-gold text-[10px] tracking-[3px]" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+                <p className="text-brand-gold text-[10px] tracking-[3px]" style={{ fontFamily: 'var(--font-montserrat), sans-serif' }}>
                     {t('hero_badge_line1')}
                 </p>
                 <p className="font-serif italic text-[16px] text-white mt-1">
@@ -221,7 +221,7 @@ export default function Hero() {
                 transition={{ duration: 0.6, delay: 1.8 }}
                 className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 z-10"
             >
-                <span className="text-brand-gold text-[9px] tracking-[4px]" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+                <span className="text-brand-gold text-[9px] tracking-[4px]" style={{ fontFamily: 'var(--font-montserrat), sans-serif' }}>
                     {t('hero_scroll')}
                 </span>
                 <motion.div

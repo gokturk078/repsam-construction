@@ -24,7 +24,7 @@ function FooterAccordion({ title, children, defaultOpen = false }: { title: stri
                 onClick={() => setOpen(!open)}
                 className="w-full flex items-center justify-between py-4 lg:hidden"
             >
-                <h4 className="text-brand-gold text-[12px] tracking-[3px] uppercase" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+                <h4 className="text-brand-gold text-[12px] tracking-[3px] uppercase" style={{ fontFamily: 'var(--font-montserrat), sans-serif' }}>
                     {title}
                 </h4>
                 <motion.span animate={{ rotate: open ? 180 : 0 }} transition={{ duration: 0.2 }}>
@@ -32,7 +32,7 @@ function FooterAccordion({ title, children, defaultOpen = false }: { title: stri
                 </motion.span>
             </button>
             {/* Desktop always visible */}
-            <h4 className="hidden lg:block text-brand-gold text-[12px] tracking-[3px] uppercase mb-6" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+            <h4 className="hidden lg:block text-brand-gold text-[12px] tracking-[3px] uppercase mb-6" style={{ fontFamily: 'var(--font-montserrat), sans-serif' }}>
                 {title}
             </h4>
             {/* Mobile collapsible */}
@@ -75,7 +75,7 @@ export default function Footer() {
                 <div className="max-w-7xl mx-auto px-4 lg:px-6 py-10 lg:py-16">
                     {/* Social proof */}
                     <div className="text-center mb-8 lg:mb-12">
-                        <p className="text-brand-gold/60 text-[11px] lg:text-[12px] tracking-[2px]" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+                        <p className="text-brand-gold/60 text-[11px] lg:text-[12px] tracking-[2px]" style={{ fontFamily: 'var(--font-montserrat), sans-serif' }}>
                             {t('footer_trust')}
                         </p>
                     </div>
@@ -89,7 +89,7 @@ export default function Footer() {
                                 </div>
                                 <div className="flex flex-col">
                                     <span className="font-serif text-[24px] lg:text-[28px] font-bold text-brand-white tracking-[2px] leading-none">REPSAM</span>
-                                    <span className="text-brand-gold text-[8px] lg:text-[9px] tracking-[4px] -mt-0.5" style={{ fontFamily: 'Montserrat, sans-serif' }}>CONSTRUCTION</span>
+                                    <span className="text-brand-gold text-[8px] lg:text-[9px] tracking-[4px] -mt-0.5" style={{ fontFamily: 'var(--font-montserrat), sans-serif' }}>CONSTRUCTION</span>
                                 </div>
                             </Link>
                             <p className="text-brand-gray text-[13px] lg:text-[14px] leading-relaxed mb-4 lg:mb-5">
@@ -160,13 +160,13 @@ export default function Footer() {
                             {(['footer_cert_iso', 'footer_cert_eu', 'footer_cert_kktc', 'footer_cert_materials'] as const).map((key) => (
                                 <div key={key} className="flex items-center gap-2">
                                     <div className="w-1 h-1 bg-brand-gold/50 rotate-45" />
-                                    <span className="text-white/20 text-[9px] lg:text-[10px] tracking-[2px] lg:tracking-[3px]" style={{ fontFamily: 'Montserrat, sans-serif' }}>{t(key)}</span>
+                                    <span className="text-white/20 text-[9px] lg:text-[10px] tracking-[2px] lg:tracking-[3px]" style={{ fontFamily: 'var(--font-montserrat), sans-serif' }}>{t(key)}</span>
                                 </div>
                             ))}
                         </div>
                         <div className="flex flex-wrap items-center justify-center gap-3 lg:gap-4">
                             {(['footer_region_uk', 'footer_region_tr', 'footer_region_eu', 'footer_region_cy'] as const).map((key) => (
-                                <span key={key} className="text-white/30 text-[10px] lg:text-[11px] px-2.5 lg:px-3 py-1 border border-white/5 rounded-full" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+                                <span key={key} className="text-white/30 text-[10px] lg:text-[11px] px-2.5 lg:px-3 py-1 border border-white/5 rounded-full" style={{ fontFamily: 'var(--font-montserrat), sans-serif' }}>
                                     {t(key)}
                                 </span>
                             ))}

@@ -18,6 +18,9 @@ export const metadata: Metadata = {
         description: 'Full-spectrum construction services: residential, commercial, infrastructure, landscaping, renovation & consulting.',
         url: 'https://repsamconstruction.com/services',
     },
+    alternates: {
+        canonical: 'https://repsamconstruction.com/services',
+    },
 }
 
 export default function ServicesLayout({ children }: { children: React.ReactNode }) {

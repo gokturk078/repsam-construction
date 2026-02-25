@@ -1,8 +1,32 @@
 import type { Metadata } from 'next'
+import { Playfair_Display, Inter, Montserrat } from 'next/font/google'
 import { LangProvider } from '@/lib/i18n'
 import ClientOverlays from '@/components/ui/ClientOverlays'
 import PageTransition from '@/components/ui/PageTransition'
+import SmoothScroll from '@/components/ui/SmoothScroll'
 import './globals.css'
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700', '800'],
+  style: ['normal', 'italic'],
+  display: 'swap',
+  variable: '--font-playfair',
+})
+
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700'],
+  display: 'swap',
+  variable: '--font-inter',
+})
+
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700', '800'],
+  display: 'swap',
+  variable: '--font-montserrat',
+})
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://repsamconstruction.com'),
@@ -118,8 +142,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className={`scroll-smooth ${playfair.variable} ${inter.variable} ${montserrat.variable}`}>
       <head>
+        <link rel="preconnect" href="https://images.unsplash.com" />
+        <link rel="dns-prefetch" href="https://www.google.com" />
         {jsonLd.map((schema, i) => (
           <script
             key={i}
@@ -128,10 +154,12 @@ export default function RootLayout({
           />
         ))}
       </head>
-      <body className="antialiased film-grain">
+      <body className={`antialiased film-grain ${inter.className}`}>
         <LangProvider>
-          <ClientOverlays />
-          <PageTransition>{children}</PageTransition>
+          <SmoothScroll>
+            <ClientOverlays />
+            <PageTransition>{children}</PageTransition>
+          </SmoothScroll>
         </LangProvider>
       </body>
     </html>

@@ -16,6 +16,9 @@ export const metadata: Metadata = {
         description: 'Premier construction company in Kyrenia, North Cyprus. Over 10 years of excellence.',
         url: 'https://repsamconstruction.com/about',
     },
+    alternates: {
+        canonical: 'https://repsamconstruction.com/about',
+    },
 }
 
 export default function AboutLayout({ children }: { children: React.ReactNode }) {

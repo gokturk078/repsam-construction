@@ -17,6 +17,9 @@ export const metadata: Metadata = {
         description: '50+ completed projects across Kyrenia and North Cyprus. Luxury villas, apartments, and commercial developments.',
         url: 'https://repsamconstruction.com/projects',
     },
+    alternates: {
+        canonical: 'https://repsamconstruction.com/projects',
+    },
 }
 
 export default function ProjectsLayout({ children }: { children: React.ReactNode }) {

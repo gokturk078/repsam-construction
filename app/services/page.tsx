@@ -6,6 +6,7 @@ import Footer from '@/components/layout/Footer'
 import SectionLabel from '@/components/ui/SectionLabel'
 import AnimatedSection from '@/components/ui/AnimatedSection'
 import SmartImage from '@/components/ui/SmartImage'
+import PageHero from '@/components/ui/PageHero'
 import CTAStrip from '@/components/home/CTAStrip'
 import { getImageById } from '@/lib/images'
 import { useLang } from '@/lib/i18n'
@@ -65,26 +66,20 @@ export { SERVICES as services }
 
 export default function ServicesPage() {
     const { t } = useLang()
+    const heroImg = getImg('blueprint-planning')
 
     return (
         <main>
             <Navbar />
-
-            <section className="relative h-[60vh] min-h-[400px] flex items-center justify-center overflow-hidden">
-                {(() => { const img = getImg('blueprint-planning'); return img ? <SmartImage src={img.src} fallbackSrc={img.fallbackSrc} alt="Services" fill priority sizes="100vw" /> : null })()}
-                <div className="absolute inset-0 bg-brand-black/70" />
-                <div className="relative z-10 text-center px-6">
-                    <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-                        <SectionLabel centered>{t('services_page_label')}</SectionLabel>
-                        <h1 className="font-serif text-brand-white font-bold" style={{ fontSize: 'clamp(2.5rem, 6vw, 4.5rem)' }}>
-                            {t('services_page_title')}
-                        </h1>
-                        <p className="text-brand-gray mt-3 text-[14px]">
-                            {t('breadcrumb_home')} / <span className="text-brand-gold">{t('nav_services')}</span>
-                        </p>
-                    </motion.div>
-                </div>
-            </section>
+            <PageHero
+                imageSrc={heroImg?.src}
+                imageFallback={heroImg?.fallbackSrc}
+                alt="Services"
+                label={t('services_page_label')}
+                title={t('services_page_title')}
+                breadcrumbHome={t('breadcrumb_home')}
+                breadcrumbCurrent={t('nav_services')}
+            />
 
             {/* Service Sections */}
             {SERVICES.map((service, i) => (
@@ -124,12 +119,12 @@ export default function ServicesPage() {
 
                                 {/* Process Steps */}
                                 <div className="space-y-3">
-                                    <h4 className="text-brand-gold text-[12px] tracking-[2px] uppercase mb-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+                                    <h4 className="text-brand-gold text-[12px] tracking-[2px] uppercase mb-4" style={{ fontFamily: 'var(--font-montserrat), sans-serif' }}>
                                         {t('svcpage_our_process')}
                                     </h4>
                                     {service.stepKeys.map((stepKey, j) => (
                                         <div key={j} className="flex items-center gap-4">
-                                            <span className="w-8 h-8 shrink-0 flex items-center justify-center bg-brand-gold text-brand-black text-[13px] font-bold" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+                                            <span className="w-8 h-8 shrink-0 flex items-center justify-center bg-brand-gold text-brand-black text-[13px] font-bold" style={{ fontFamily: 'var(--font-montserrat), sans-serif' }}>
                                                 {j + 1}
                                             </span>
                                             <span className="text-brand-white text-[14px]">{t(stepKey)}</span>

@@ -17,6 +17,9 @@ export const metadata: Metadata = {
         description: 'Request a free consultation for your construction project in North Cyprus.',
         url: 'https://repsamconstruction.com/contact',
     },
+    alternates: {
+        canonical: 'https://repsamconstruction.com/contact',
+    },
 }
 
 export default function ContactLayout({ children }: { children: React.ReactNode }) {
