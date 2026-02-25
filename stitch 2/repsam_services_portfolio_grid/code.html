@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Repsam Services Portfolio Grid</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#c9a74a",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#1f1c13",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .technical-grid {
+            background-image: 
+                linear-gradient(to right, rgba(201, 167, 74, 0.05) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(201, 167, 74, 0.05) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+        .gold-border-gradient {
+            border: 1px solid rgba(201, 167, 74, 0.2);
+        }
+        .gold-border-gradient:hover {
+            border-color: rgba(201, 167, 74, 0.6);
+        }
+    </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden technical-grid">
+<div class="layout-container flex h-full grow flex-col">
+<!-- Navigation Header -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-primary/20 px-6 md:px-20 py-4 bg-background-dark/80 backdrop-blur-md sticky top-0 z-50">
+<div class="flex items-center gap-3">
+<div class="size-8 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M47.2426 24L24 47.2426L0.757355 24L24 0.757355L47.2426 24ZM12.2426 21H35.7574L24 9.24264L12.2426 21Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-slate-100 text-xl font-bold leading-tight tracking-tight">Repsam Construction Ltd.</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-10">
+<div class="flex items-center gap-8">
+<a class="text-slate-100 text-sm font-medium hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-slate-400 text-sm font-medium hover:text-primary transition-colors" href="#">About</a>
+<a class="text-primary text-sm font-semibold" href="#">Services</a>
+<a class="text-slate-400 text-sm font-medium hover:text-primary transition-colors" href="#">Portfolio</a>
+<a class="text-slate-400 text-sm font-medium hover:text-primary transition-colors" href="#">Contact</a>
+</div>
+<button class="flex min-w-[120px] cursor-pointer items-center justify-center rounded h-10 px-6 bg-primary text-background-dark text-sm font-bold transition-all hover:bg-primary/90">
+                        Get a Quote
+                    </button>
+</div>
+</header>
+<main class="flex-1 px-6 md:px-20 py-16 max-w-7xl mx-auto w-full">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row justify-between items-end gap-6 mb-16">
+<div class="max-w-2xl">
+<div class="flex items-center gap-2 mb-4">
+<div class="h-px w-8 bg-primary"></div>
+<span class="text-primary text-sm font-bold tracking-widest uppercase">Expertise &amp; Quality</span>
+</div>
+<h1 class="text-slate-100 text-5xl font-black leading-tight tracking-tight mb-4">
+                            Complete <span class="text-primary">Construction</span> Solutions
+                        </h1>
+<p class="text-slate-400 text-lg leading-relaxed">
+                            Delivering high-end architectural and technological excellence across North Cyprus. From concept to completion, we build visions into reality.
+                        </p>
+</div>
+<button class="flex min-w-[180px] cursor-pointer items-center justify-center rounded h-12 px-6 border border-primary/40 text-primary text-sm font-bold hover:bg-primary hover:text-background-dark transition-all">
+                        View All Services
+                    </button>
+</div>
+<!-- Service Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Card 1: Residential -->
+<div class="flex flex-col gold-border-gradient bg-background-dark/40 group hover:-translate-y-2 transition-all duration-300">
+<div class="relative w-full aspect-[16/10] overflow-hidden">
+<div class="absolute inset-0 bg-background-dark/20 group-hover:bg-transparent transition-colors duration-300 z-10"></div>
+<img alt="Luxury modern villa in Kyrenia" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Modern white luxury villa with pool" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBu9jv5oZSF7q-biBZKj02BBT25mFJ_ChrizcbREaU0dhQD8vaConfivjPWIdGgvrABJK1bSWfpElM4a6tzT0O0jao04wRXWZaBkcO6adGalzxS6g6EKH3r92xvEQB1ioG7ivWyCk8TwvVpb3pbWB4X8oR8l8kNXwDh0ZmmJXMWV8AT9AY-gDKFJhkGOBp42g6OohpXmiJESly1MDjhGAU_ecyn1RFYJDgMPdWzUsiCdyPUmYfjTGcxnj46ZDoee0DHUky9pTOnVBcF"/>
+<div class="absolute bottom-4 left-4 z-20">
+<span class="bg-primary px-3 py-1 text-[10px] font-bold text-background-dark uppercase tracking-widest">Residential</span>
+</div>
+</div>
+<div class="p-8 flex flex-col gap-4">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">home_work</span>
+<h3 class="text-slate-100 text-xl font-bold">Residential Development</h3>
+</div>
+<p class="text-slate-400 text-sm leading-relaxed">
+                                Luxury villas and high-end apartments tailored for premium living in Kyrenia's most sought-after locations.
+                            </p>
+<div class="flex flex-wrap gap-2 pt-2">
+<span class="text-[10px] border border-slate-700 px-2 py-1 text-slate-500 font-medium">PREMIUM FINISH</span>
+<span class="text-[10px] border border-slate-700 px-2 py-1 text-slate-500 font-medium">BESPOKE</span>
+</div>
+</div>
+</div>
+<!-- Card 2: Commercial -->
+<div class="flex flex-col gold-border-gradient bg-background-dark/40 group hover:-translate-y-2 transition-all duration-300">
+<div class="relative w-full aspect-[16/10] overflow-hidden">
+<div class="absolute inset-0 bg-background-dark/20 group-hover:bg-transparent transition-colors duration-300 z-10"></div>
+<img alt="Modern glass office building facade" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Modern glass and steel office facade" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5UvjISS-IHGZWrn8pAymSdpO5Wu79P8xdP2qSxHZH121ReXX5gPyig3Oqq0_P1653aVCubzOPuB4ObcRv8sDDAyUSNU8hJC9YfE9L2cONYPyqVqXVFHIhGOs9uG131EKfszYVD0XBQhkKWmDf15jN3GpXv0TeZUnSSfvK0Pap4686Pp3oOzO4eYzya0TwrVrN0mgeZ9Llf7U102ztEwuHoOeeXlprCTQ5EGGOO-R_AKxhdYz4ua1sFbmna1DaJ59bHsPxmuyu79cC"/>
+<div class="absolute bottom-4 left-4 z-20">
+<span class="bg-primary px-3 py-1 text-[10px] font-bold text-background-dark uppercase tracking-widest">Commercial</span>
+</div>
+</div>
+<div class="p-8 flex flex-col gap-4">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">corporate_fare</span>
+<h3 class="text-slate-100 text-xl font-bold">Commercial Spaces</h3>
+</div>
+<p class="text-slate-400 text-sm leading-relaxed">
+                                State-of-the-art office buildings and retail hubs designed for business efficiency and modern aesthetics.
+                            </p>
+<div class="flex flex-wrap gap-2 pt-2">
+<span class="text-[10px] border border-slate-700 px-2 py-1 text-slate-500 font-medium">PROFESSIONAL</span>
+<span class="text-[10px] border border-slate-700 px-2 py-1 text-slate-500 font-medium">URBAN HUB</span>
+</div>
+</div>
+</div>
+<!-- Card 3: Infrastructure -->
+<div class="flex flex-col gold-border-gradient bg-background-dark/40 group hover:-translate-y-2 transition-all duration-300">
+<div class="relative w-full aspect-[16/10] overflow-hidden">
+<div class="absolute inset-0 bg-background-dark/20 group-hover:bg-transparent transition-colors duration-300 z-10"></div>
+<img alt="Large scale civil engineering project" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Large scale road or bridge construction" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKoZpjsAJZCk6ddZt456GbnsYOp_uHyuaGoV4-CVJltGU2dfk0HPo4vy_aRqehvGiXmRQi6mY5a86AUEQvUtaqKAZ4K6_j1o0woeh8cMdbztd2-O9gxTZcr568Wg0cSPh3RnbDtNbZ30z3qNN12kjuI1mlfe1WpHwK6PFd3O6kXKR4Et4mcCeZCg8cjKzoZNgCR5zWakuvPO8QCoQRXG6446YPwyKfHDkYVzGuhi4EeEDg5OM9cEfVWIMSc_UBFWWU__1DvIlHnojC"/>
+<div class="absolute bottom-4 left-4 z-20">
+<span class="bg-primary px-3 py-1 text-[10px] font-bold text-background-dark uppercase tracking-widest">Infrastructure</span>
+</div>
+</div>
+<div class="p-8 flex flex-col gap-4">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">foundation</span>
+<h3 class="text-slate-100 text-xl font-bold">Infrastructure Projects</h3>
+</div>
+<p class="text-slate-400 text-sm leading-relaxed">
+                                Large-scale urban planning and civil engineering works that define the landscape of North Cyprus.
+                            </p>
+<div class="flex flex-wrap gap-2 pt-2">
+<span class="text-[10px] border border-slate-700 px-2 py-1 text-slate-500 font-medium">CIVIL WORKS</span>
+<span class="text-[10px] border border-slate-700 px-2 py-1 text-slate-500 font-medium">SCALABLE</span>
+</div>
+</div>
+</div>
+<!-- Card 4: Smart Technology -->
+<div class="flex flex-col gold-border-gradient bg-background-dark/40 group hover:-translate-y-2 transition-all duration-300">
+<div class="relative w-full aspect-[16/10] overflow-hidden">
+<div class="absolute inset-0 bg-background-dark/20 group-hover:bg-transparent transition-colors duration-300 z-10"></div>
+<img alt="Smart home control system interface" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Abstract smart home technology control panel" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvmtPICLn35yoGuXMDqdKDFLNSX-ioCypP-Mphl1rD4-827U7c70K5jLmThtWqNHiXTsW_BeThV6c11dO46UdjahcAMPXpEZ4p_1DbsVeffEvV54xlmWXbTi6SyCPxW0fn8z38MiHunKaGPJ4ldOsNdrUXT_ZqbLy09gJReYZ3SAKJfFgMtM3eduloxKgjCCt-gshvW2NOFETePPPxx50Sxi26RwuUJXnpGkf2HOHZy-f_d65_pEl03p6rIUsYVH7M1zt0yuhkJEQ0"/>
+<div class="absolute bottom-4 left-4 z-20">
+<span class="bg-primary px-3 py-1 text-[10px] font-bold text-background-dark uppercase tracking-widest">Innovation</span>
+</div>
+</div>
+<div class="p-8 flex flex-col gap-4">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">home_iot_device</span>
+<h3 class="text-slate-100 text-xl font-bold">Smart Technology</h3>
+</div>
+<p class="text-slate-400 text-sm leading-relaxed">
+                                Cutting-edge building automation, energy efficiency systems, and high-tech security integration.
+                            </p>
+<div class="flex flex-wrap gap-2 pt-2">
+<span class="text-[10px] border border-slate-700 px-2 py-1 text-slate-500 font-medium">AUTOMATION</span>
+<span class="text-[10px] border border-slate-700 px-2 py-1 text-slate-500 font-medium">ECO-TECH</span>
+</div>
+</div>
+</div>
+<!-- Card 5: Architectural Design -->
+<div class="flex flex-col gold-border-gradient bg-background-dark/40 group hover:-translate-y-2 transition-all duration-300">
+<div class="relative w-full aspect-[16/10] overflow-hidden">
+<div class="absolute inset-0 bg-background-dark/20 group-hover:bg-transparent transition-colors duration-300 z-10"></div>
+<img alt="Architectural drawing and model" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Architectural blueprints and 3D model" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6e3Yu_gTZZVkgDTqsyzEnmH6yiXKiVHH1Higk3l3GUzK-jJzCnc3d5AQ571C3wtSblnb6NNM5iiHrdWwu8ESTgnBna3cqfrebbdMJw70WTHoFLqL6rfqwU22kulJ4Oc7jcmrRDKjR7b_c2hh-fC6kZBn0bHLLMWTd5CmLbNU4gSVVPqDAkUHG1_gNvrkJWNXUoxH9KpFhfHLpM7x8uPeKm6swh9snzmUF0f9NbKu8MU62RrZIfrlHQjtL3ZxjI9DmP8DhSopfhfKW"/>
+<div class="absolute bottom-4 left-4 z-20">
+<span class="bg-primary px-3 py-1 text-[10px] font-bold text-background-dark uppercase tracking-widest">Design</span>
+</div>
+</div>
+<div class="p-8 flex flex-col gap-4">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">architecture</span>
+<h3 class="text-slate-100 text-xl font-bold">Architectural Design</h3>
+</div>
+<p class="text-slate-400 text-sm leading-relaxed">
+                                Bespoke architectural concepts, interior design, and immersive 3D modeling for visionary clients.
+                            </p>
+<div class="flex flex-wrap gap-2 pt-2">
+<span class="text-[10px] border border-slate-700 px-2 py-1 text-slate-500 font-medium">3D MODELING</span>
+<span class="text-[10px] border border-slate-700 px-2 py-1 text-slate-500 font-medium">PLANNING</span>
+</div>
+</div>
+</div>
+<!-- Card 6: Restoration -->
+<div class="flex flex-col gold-border-gradient bg-background-dark/40 group hover:-translate-y-2 transition-all duration-300">
+<div class="relative w-full aspect-[16/10] overflow-hidden">
+<div class="absolute inset-0 bg-background-dark/20 group-hover:bg-transparent transition-colors duration-300 z-10"></div>
+<img alt="Heritage building restoration" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Detail of a historical stone restoration" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8MaouuOoFw58ZqYN-B3M4JWuT4Jc03VmkK-40Ikl912AYJP-HBQV_5DbaXyh2aX25yy3SbFLlXptaZynmZvkQ0ihbgcnYDJcw9JekobmjXqU9WrXG_2CVIjlgsnyR56ug_NUCZd32E-0PSEKpUwHEnT0j8T08NHWbLZ-BOGVBJeu78j2h2HRGKwdbsQJ_ja0t3fnjfc64jQk5H7oRzvxLmFrV0k_uRWrW3vt-nuE4V9BbZwc8xn0tw8PW9JMlrJMK9N3kfrTE2MCQ"/>
+<div class="absolute bottom-4 left-4 z-20">
+<span class="bg-primary px-3 py-1 text-[10px] font-bold text-background-dark uppercase tracking-widest">Expertise</span>
+</div>
+</div>
+<div class="p-8 flex flex-col gap-4">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">history_edu</span>
+<h3 class="text-slate-100 text-xl font-bold">Renovation &amp; Restoration</h3>
+</div>
+<p class="text-slate-400 text-sm leading-relaxed">
+                                Preserving heritage and restoring historic structures with contemporary techniques and lasting quality.
+                            </p>
+<div class="flex flex-wrap gap-2 pt-2">
+<span class="text-[10px] border border-slate-700 px-2 py-1 text-slate-500 font-medium">HERITAGE</span>
+<span class="text-[10px] border border-slate-700 px-2 py-1 text-slate-500 font-medium">PRECISION</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Call to Action Section -->
+<div class="mt-24 gold-border-gradient bg-gradient-to-br from-background-dark to-slate-900 p-12 text-center relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -mr-32 -mt-32"></div>
+<div class="absolute bottom-0 left-0 w-48 h-48 bg-primary/5 rounded-full blur-2xl -ml-24 -mb-24"></div>
+<div class="relative z-10 flex flex-col items-center">
+<h2 class="text-slate-100 text-4xl font-black mb-6">Ready to Build Your Vision?</h2>
+<p class="text-slate-400 text-lg max-w-2xl mb-10">
+                            Partner with North Cyprus's leading luxury construction firm for architectural and technological excellence.
+                        </p>
+<div class="flex flex-wrap justify-center gap-4">
+<button class="bg-primary text-background-dark px-10 py-4 font-bold rounded shadow-lg shadow-primary/20 hover:bg-primary/90 transition-all">
+                                Schedule a Consultation
+                            </button>
+<button class="bg-slate-800 text-slate-100 px-10 py-4 font-bold rounded hover:bg-slate-700 transition-all">
+                                Download Portfolio
+                            </button>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="mt-auto flex flex-col gap-10 px-6 md:px-20 py-16 text-center border-t border-primary/10 bg-background-dark">
+<div class="flex flex-wrap items-center justify-center gap-12">
+<a class="text-slate-400 text-sm hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="text-slate-400 text-sm hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="text-slate-400 text-sm hover:text-primary transition-colors" href="#">Cookie Policy</a>
+<a class="text-slate-400 text-sm hover:text-primary transition-colors" href="#">Sitemap</a>
+</div>
+<div class="flex justify-center gap-6">
+<a class="w-10 h-10 rounded border border-slate-700 flex items-center justify-center text-slate-400 hover:text-primary hover:border-primary transition-all" href="#">
+<svg fill="currentColor" height="20px" viewbox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+<path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"></path>
+</svg>
+</a>
+<a class="w-10 h-10 rounded border border-slate-700 flex items-center justify-center text-slate-400 hover:text-primary hover:border-primary transition-all" href="#">
+<svg fill="currentColor" height="20px" viewbox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+<path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"></path>
+</svg>
+</a>
+<a class="w-10 h-10 rounded border border-slate-700 flex items-center justify-center text-slate-400 hover:text-primary hover:border-primary transition-all" href="#">
+<svg fill="currentColor" height="20px" viewbox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+<path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z"></path>
+</svg>
+</a>
+</div>
+<p class="text-slate-500 text-sm font-medium">© 2024 Repsam Construction Ltd. All rights reserved. Registered in Northern Cyprus.</p>
+</footer>
+</div>
+</div>
+</body></html>

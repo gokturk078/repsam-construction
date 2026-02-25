@@ -1,0 +1,206 @@
+{
+  "generated": "2024-01-01T00:00:00Z",
+  "totalImages": 20,
+  "images": [
+    {
+      "id": "hero-main",
+      "filename": "hero-main-enhanced.webp",
+      "originalFilename": "hero-main.jpg",
+      "category": "hero",
+      "usage": "homepage_hero",
+      "width": 1920,
+      "height": 1080,
+      "blurDataURL": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUABkDASIAAhEBAxEB/8QAGgAAAgMBAQAAAAAAAAAAAAAAAAYDBAUHCP/EACgQAAICAgEDBAEFAAAAAAAAAAECAwQABREGEhMhMUFRYRQiI5Gx/8QAFwEAAwEAAAAAAAAAAAAAAAAAAQIDBP/EABwRAAMBAAIDAAAAAAAAAAAAAAECEQADIRIxQf/aAAwDAQACEQMRAD8A9N6DqGh1FNq/S7KvKk0YlUBlPaSQDj6+MyNv1P07R2TXt7KJEPoVVWkI/oHMvpbSQ1utqlCLDG2vMkSlECgkEAn1+cW/kFaVoQ0sZ7kZP2x+ckXxj2sGCbSd51B3Ps+01x6frbtjqrqzw+WFHVI7C+SkAen+5v7/c0NO/SXtjHTuJ8bpqGlz0xwGV3uNj4lUPYseJ454P3hh5cPIwj4n//Z"
+    },
+    {
+      "id": "hero-secondary",
+      "filename": "hero-secondary-enhanced.webp",
+      "originalFilename": "hero-secondary.jpg",
+      "category": "hero",
+      "usage": "about_hero",
+      "width": 1920,
+      "height": 1080,
+      "blurDataURL": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUABkDASIAAhEBAxEB/8QAGgAAAgMBAQAAAAAAAAAAAAAAAAYDBAUHCP/EACgQAAICAgEDBAEFAAAAAAAAAAECAwQABREGEhMhMUFRYRQiI5Gx/8QAFwEAAwEAAAAAAAAAAAAAAAAAAQIDBP/EABwRAAMBAAIDAAAAAAAAAAAAAAECEQADIRIxQf/aAAwDAQACEQMRAD8A9N6DqGh1FNq/S7KvKk0YlUBlPaSQDj6+MyNv1P07R2TXt7KJEPoVVWkI/oHMvpbSQ1utqlCLDG2vMkSlECgkEAn1+cW/kFaVoQ0sZ7kZP2x+ckXxj2sGCbSd51B3Ps+01x6frbtjqrqzw+WFHVI7C+SkAen+5v7/c0NO/SXtjHTuJ8bpqGlz0xwGV3uNj4lUPYseJ454P3hh5cPIwj4n//Z"
+    },
+    {
+      "id": "project-villa-01",
+      "filename": "project-villa-01-enhanced.webp",
+      "originalFilename": "project-villa-01.jpg",
+      "category": "residential",
+      "usage": "project_villa_01",
+      "width": 1920,
+      "height": 1280,
+      "blurDataURL": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUABkDASIAAhEBAxEB/8QAGgAAAgMBAQAAAAAAAAAAAAAAAAYDBAUHCP/EACgQAAICAgEDBAEFAAAAAAAAAAECAwQABREGEhMhMUFRYRQiI5Gx/8QAFwEAAwEAAAAAAAAAAAAAAAAAAQIDBP/EABwRAAMBAAIDAAAAAAAAAAAAAAECEQADIRIxQf/aAAwDAQACEQMRAD8A9N6DqGh1FNq/S7KvKk0YlUBlPaSQDj6+MyNv1P07R2TXt7KJEPoVVWkI/oHMvpbSQ1utqlCLDG2vMkSlECgkEAn1+cW/kFaVoQ0sZ7kZP2x+ckXxj2sGCbSd51B3Ps+01x6frbtjqrqzw+WFHVI7C+SkAen+5v7/c0NO/SXtjHTuJ8bpqGlz0xwGV3uNj4lUPYseJ454P3hh5cPIwj4n//Z"
+    },
+    {
+      "id": "project-villa-02",
+      "filename": "project-villa-02-enhanced.webp",
+      "originalFilename": "project-villa-02.jpg",
+      "category": "residential",
+      "usage": "project_villa_02",
+      "width": 1920,
+      "height": 1280,
+      "blurDataURL": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUABkDASIAAhEBAxEB/8QAGgAAAgMBAQAAAAAAAAAAAAAAAAYDBAUHCP/EACgQAAICAgEDBAEFAAAAAAAAAAECAwQABREGEhMhMUFRYRQiI5Gx/8QAFwEAAwEAAAAAAAAAAAAAAAAAAQIDBP/EABwRAAMBAAIDAAAAAAAAAAAAAAECEQADIRIxQf/aAAwDAQACEQMRAD8A9N6DqGh1FNq/S7KvKk0YlUBlPaSQDj6+MyNv1P07R2TXt7KJEPoVVWkI/oHMvpbSQ1utqlCLDG2vMkSlECgkEAn1+cW/kFaVoQ0sZ7kZP2x+ckXxj2sGCbSd51B3Ps+01x6frbtjqrqzw+WFHVI7C+SkAen+5v7/c0NO/SXtjHTuJ8bpqGlz0xwGV3uNj4lUPYseJ454P3hh5cPIwj4n//Z"
+    },
+    {
+      "id": "project-apartments-01",
+      "filename": "project-apartments-01-enhanced.webp",
+      "originalFilename": "project-apartments-01.jpg",
+      "category": "residential",
+      "usage": "project_apartments",
+      "width": 1920,
+      "height": 1280,
+      "blurDataURL": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUABkDASIAAhEBAxEB/8QAGgAAAgMBAQAAAAAAAAAAAAAAAAYDBAUHCP/EACgQAAICAgEDBAEFAAAAAAAAAAECAwQABREGEhMhMUFRYRQiI5Gx/8QAFwEAAwEAAAAAAAAAAAAAAAAAAQIDBP/EABwRAAMBAAIDAAAAAAAAAAAAAAECEQADIRIxQf/aAAwDAQACEQMRAD8A9N6DqGh1FNq/S7KvKk0YlUBlPaSQDj6+MyNv1P07R2TXt7KJEPoVVWkI/oHMvpbSQ1utqlCLDG2vMkSlECgkEAn1+cW/kFaVoQ0sZ7kZP2x+ckXxj2sGCbSd51B3Ps+01x6frbtjqrqzw+WFHVI7C+SkAen+5v7/c0NO/SXtjHTuJ8bpqGlz0xwGV3uNj4lUPYseJ454P3hh5cPIwj4n//Z"
+    },
+    {
+      "id": "project-complex-01",
+      "filename": "project-complex-01-enhanced.webp",
+      "originalFilename": "project-complex-01.jpg",
+      "category": "residential",
+      "usage": "project_complex",
+      "width": 1920,
+      "height": 1280,
+      "blurDataURL": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUABkDASIAAhEBAxEB/8QAGgAAAgMBAQAAAAAAAAAAAAAAAAYDBAUHCP/EACgQAAICAgEDBAEFAAAAAAAAAAECAwQABREGEhMhMUFRYRQiI5Gx/8QAFwEAAwEAAAAAAAAAAAAAAAAAAQIDBP/EABwRAAMBAAIDAAAAAAAAAAAAAAECEQADIRIxQf/aAAwDAQACEQMRAD8A9N6DqGh1FNq/S7KvKk0YlUBlPaSQDj6+MyNv1P07R2TXt7KJEPoVVWkI/oHMvpbSQ1utqlCLDG2vMkSlECgkEAn1+cW/kFaVoQ0sZ7kZP2x+ckXxj2sGCbSd51B3Ps+01x6frbtjqrqzw+WFHVI7C+SkAen+5v7/c0NO/SXtjHTuJ8bpqGlz0xwGV3uNj4lUPYseJ454P3hh5cPIwj4n//Z"
+    },
+    {
+      "id": "construction-site-01",
+      "filename": "construction-site-01-enhanced.webp",
+      "originalFilename": "construction-site-01.jpg",
+      "category": "construction",
+      "usage": "construction_active",
+      "width": 1920,
+      "height": 1280,
+      "blurDataURL": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUABkDASIAAhEBAxEB/8QAGgAAAgMBAQAAAAAAAAAAAAAAAAYDBAUHCP/EACgQAAICAgEDBAEFAAAAAAAAAAECAwQABREGEhMhMUFRYRQiI5Gx/8QAFwEAAwEAAAAAAAAAAAAAAAAAAQIDBP/EABwRAAMBAAIDAAAAAAAAAAAAAAECEQADIRIxQf/aAAwDAQACEQMRAD8A9N6DqGh1FNq/S7KvKk0YlUBlPaSQDj6+MyNv1P07R2TXt7KJEPoVVWkI/oHMvpbSQ1utqlCLDG2vMkSlECgkEAn1+cW/kFaVoQ0sZ7kZP2x+ckXxj2sGCbSd51B3Ps+01x6frbtjqrqzw+WFHVI7C+SkAen+5v7/c0NO/SXtjHTuJ8bpqGlz0xwGV3uNj4lUPYseJ454P3hh5cPIwj4n//Z"
+    },
+    {
+      "id": "construction-site-02",
+      "filename": "construction-site-02-enhanced.webp",
+      "originalFilename": "construction-site-02.jpg",
+      "category": "construction",
+      "usage": "construction_detail",
+      "width": 1920,
+      "height": 1280,
+      "blurDataURL": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUABkDASIAAhEBAxEB/8QAGgAAAgMBAQAAAAAAAAAAAAAAAAYDBAUHCP/EACgQAAICAgEDBAEFAAAAAAAAAAECAwQABREGEhMhMUFRYRQiI5Gx/8QAFwEAAwEAAAAAAAAAAAAAAAAAAQIDBP/EABwRAAMBAAIDAAAAAAAAAAAAAAECEQADIRIxQf/aAAwDAQACEQMRAD8A9N6DqGh1FNq/S7KvKk0YlUBlPaSQDj6+MyNv1P07R2TXt7KJEPoVVWkI/oHMvpbSQ1utqlCLDG2vMkSlECgkEAn1+cW/kFaVoQ0sZ7kZP2x+ckXxj2sGCbSd51B3Ps+01x6frbtjqrqzw+WFHVI7C+SkAen+5v7/c0NO/SXtjHTuJ8bpqGlz0xwGV3uNj4lUPYseJ454P3hh5cPIwj4n//Z"
+    },
+    {
+      "id": "construction-progress-01",
+      "filename": "construction-progress-01-enhanced.webp",
+      "originalFilename": "construction-progress-01.jpg",
+      "category": "construction",
+      "usage": "construction_progress",
+      "width": 1920,
+      "height": 1280,
+      "blurDataURL": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUABkDASIAAhEBAxEB/8QAGgAAAgMBAQAAAAAAAAAAAAAAAAYDBAUHCP/EACgQAAICAgEDBAEFAAAAAAAAAAECAwQABREGEhMhMUFRYRQiI5Gx/8QAFwEAAwEAAAAAAAAAAAAAAAAAAQIDBP/EABwRAAMBAAIDAAAAAAAAAAAAAAECEQADIRIxQf/aAAwDAQACEQMRAD8A9N6DqGh1FNq/S7KvKk0YlUBlPaSQDj6+MyNv1P07R2TXt7KJEPoVVWkI/oHMvpbSQ1utqlCLDG2vMkSlECgkEAn1+cW/kFaVoQ0sZ7kZP2x+ckXxj2sGCbSd51B3Ps+01x6frbtjqrqzw+WFHVI7C+SkAen+5v7/c0NO/SXtjHTuJ8bpqGlz0xwGV3uNj4lUPYseJ454P3hh5cPIwj4n//Z"
+    },
+    {
+      "id": "project-commercial-01",
+      "filename": "project-commercial-01-enhanced.webp",
+      "originalFilename": "project-commercial-01.jpg",
+      "category": "commercial",
+      "usage": "project_commercial_01",
+      "width": 1920,
+      "height": 1280,
+      "blurDataURL": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUABkDASIAAhEBAxEB/8QAGgAAAgMBAQAAAAAAAAAAAAAAAAYDBAUHCP/EACgQAAICAgEDBAEFAAAAAAAAAAECAwQABREGEhMhMUFRYRQiI5Gx/8QAFwEAAwEAAAAAAAAAAAAAAAAAAQIDBP/EABwRAAMBAAIDAAAAAAAAAAAAAAECEQADIRIxQf/aAAwDAQACEQMRAD8A9N6DqGh1FNq/S7KvKk0YlUBlPaSQDj6+MyNv1P07R2TXt7KJEPoVVWkI/oHMvpbSQ1utqlCLDG2vMkSlECgkEAn1+cW/kFaVoQ0sZ7kZP2x+ckXxj2sGCbSd51B3Ps+01x6frbtjqrqzw+WFHVI7C+SkAen+5v7/c0NO/SXtjHTuJ8bpqGlz0xwGV3uNj4lUPYseJ454P3hh5cPIwj4n//Z"
+    },
+    {
+      "id": "project-commercial-02",
+      "filename": "project-commercial-02-enhanced.webp",
+      "originalFilename": "project-commercial-02.jpg",
+      "category": "commercial",
+      "usage": "project_commercial_02",
+      "width": 1920,
+      "height": 1280,
+      "blurDataURL": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUABkDASIAAhEBAxEB/8QAGgAAAgMBAQAAAAAAAAAAAAAAAAYDBAUHCP/EACgQAAICAgEDBAEFAAAAAAAAAAECAwQABREGEhMhMUFRYRQiI5Gx/8QAFwEAAwEAAAAAAAAAAAAAAAAAAQIDBP/EABwRAAMBAAIDAAAAAAAAAAAAAAECEQADIRIxQf/aAAwDAQACEQMRAD8A9N6DqGh1FNq/S7KvKk0YlUBlPaSQDj6+MyNv1P07R2TXt7KJEPoVVWkI/oHMvpbSQ1utqlCLDG2vMkSlECgkEAn1+cW/kFaVoQ0sZ7kZP2x+ckXxj2sGCbSd51B3Ps+01x6frbtjqrqzw+WFHVI7C+SkAen+5v7/c0NO/SXtjHTuJ8bpqGlz0xwGV3uNj4lUPYseJ454P3hh5cPIwj4n//Z"
+    },
+    {
+      "id": "project-infrastructure-01",
+      "filename": "project-infrastructure-01-enhanced.webp",
+      "originalFilename": "project-infrastructure-01.jpg",
+      "category": "infrastructure",
+      "usage": "project_infrastructure_01",
+      "width": 1920,
+      "height": 1280,
+      "blurDataURL": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUABkDASIAAhEBAxEB/8QAGgAAAgMBAQAAAAAAAAAAAAAAAAYDBAUHCP/EACgQAAICAgEDBAEFAAAAAAAAAAECAwQABREGEhMhMUFRYRQiI5Gx/8QAFwEAAwEAAAAAAAAAAAAAAAAAAQIDBP/EABwRAAMBAAIDAAAAAAAAAAAAAAECEQADIRIxQf/aAAwDAQACEQMRAD8A9N6DqGh1FNq/S7KvKk0YlUBlPaSQDj6+MyNv1P07R2TXt7KJEPoVVWkI/oHMvpbSQ1utqlCLDG2vMkSlECgkEAn1+cW/kFaVoQ0sZ7kZP2x+ckXxj2sGCbSd51B3Ps+01x6frbtjqrqzw+WFHVI7C+SkAen+5v7/c0NO/SXtjHTuJ8bpqGlz0xwGV3uNj4lUPYseJ454P3hh5cPIwj4n//Z"
+    },
+    {
+      "id": "project-infrastructure-02",
+      "filename": "project-infrastructure-02-enhanced.webp",
+      "originalFilename": "project-infrastructure-02.jpg",
+      "category": "infrastructure",
+      "usage": "project_infrastructure_02",
+      "width": 1920,
+      "height": 1280,
+      "blurDataURL": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUABkDASIAAhEBAxEB/8QAGgAAAgMBAQAAAAAAAAAAAAAAAAYDBAUHCP/EACgQAAICAgEDBAEFAAAAAAAAAAECAwQABREGEhMhMUFRYRQiI5Gx/8QAFwEAAwEAAAAAAAAAAAAAAAAAAQIDBP/EABwRAAMBAAIDAAAAAAAAAAAAAAECEQADIRIxQf/aAAwDAQACEQMRAD8A9N6DqGh1FNq/S7KvKk0YlUBlPaSQDj6+MyNv1P07R2TXt7KJEPoVVWkI/oHMvpbSQ1utqlCLDG2vMkSlECgkEAn1+cW/kFaVoQ0sZ7kZP2x+ckXxj2sGCbSd51B3Ps+01x6frbtjqrqzw+WFHVI7C+SkAen+5v7/c0NO/SXtjHTuJ8bpqGlz0xwGV3uNj4lUPYseJ454P3hh5cPIwj4n//Z"
+    },
+    {
+      "id": "project-technology-01",
+      "filename": "project-technology-01-enhanced.webp",
+      "originalFilename": "project-technology-01.jpg",
+      "category": "technology",
+      "usage": "project_technology",
+      "width": 1920,
+      "height": 1280,
+      "blurDataURL": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUABkDASIAAhEBAxEB/8QAGgAAAgMBAQAAAAAAAAAAAAAAAAYDBAUHCP/EACgQAAICAgEDBAEFAAAAAAAAAAECAwQABREGEhMhMUFRYRQiI5Gx/8QAFwEAAwEAAAAAAAAAAAAAAAAAAQIDBP/EABwRAAMBAAIDAAAAAAAAAAAAAAECEQADIRIxQf/aAAwDAQACEQMRAD8A9N6DqGh1FNq/S7KvKk0YlUBlPaSQDj6+MyNv1P07R2TXt7KJEPoVVWkI/oHMvpbSQ1utqlCLDG2vMkSlECgkEAn1+cW/kFaVoQ0sZ7kZP2x+ckXxj2sGCbSd51B3Ps+01x6frbtjqrqzw+WFHVI7C+SkAen+5v7/c0NO/SXtjHTuJ8bpqGlz0xwGV3uNj4lUPYseJ454P3hh5cPIwj4n//Z"
+    },
+    {
+      "id": "project-solar-01",
+      "filename": "project-solar-01-enhanced.webp",
+      "originalFilename": "project-solar-01.jpg",
+      "category": "technology",
+      "usage": "project_solar",
+      "width": 1920,
+      "height": 1280,
+      "blurDataURL": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUABkDASIAAhEBAxEB/8QAGgAAAgMBAQAAAAAAAAAAAAAAAAYDBAUHCP/EACgQAAICAgEDBAEFAAAAAAAAAAECAwQABREGEhMhMUFRYRQiI5Gx/8QAFwEAAwEAAAAAAAAAAAAAAAAAAQIDBP/EABwRAAMBAAIDAAAAAAAAAAAAAAECEQADIRIxQf/aAAwDAQACEQMRAD8A9N6DqGh1FNq/S7KvKk0YlUBlPaSQDj6+MyNv1P07R2TXt7KJEPoVVWkI/oHMvpbSQ1utqlCLDG2vMkSlECgkEAn1+cW/kFaVoQ0sZ7kZP2x+ckXxj2sGCbSd51B3Ps+01x6frbtjqrqzw+WFHVI7C+SkAen+5v7/c0NO/SXtjHTuJ8bpqGlz0xwGV3uNj4lUPYseJ454P3hh5cPIwj4n//Z"
+    },
+    {
+      "id": "interior-living-01",
+      "filename": "interior-living-01-enhanced.webp",
+      "originalFilename": "interior-living-01.jpg",
+      "category": "interior",
+      "usage": "interior_living",
+      "width": 1920,
+      "height": 1280,
+      "blurDataURL": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUABkDASIAAhEBAxEB/8QAGgAAAgMBAQAAAAAAAAAAAAAAAAYDBAUHCP/EACgQAAICAgEDBAEFAAAAAAAAAAECAwQABREGEhMhMUFRYRQiI5Gx/8QAFwEAAwEAAAAAAAAAAAAAAAAAAQIDBP/EABwRAAMBAAIDAAAAAAAAAAAAAAECEQADIRIxQf/aAAwDAQACEQMRAD8A9N6DqGh1FNq/S7KvKk0YlUBlPaSQDj6+MyNv1P07R2TXt7KJEPoVVWkI/oHMvpbSQ1utqlCLDG2vMkSlECgkEAn1+cW/kFaVoQ0sZ7kZP2x+ckXxj2sGCbSd51B3Ps+01x6frbtjqrqzw+WFHVI7C+SkAen+5v7/c0NO/SXtjHTuJ8bpqGlz0xwGV3uNj4lUPYseJ454P3hh5cPIwj4n//Z"
+    },
+    {
+      "id": "interior-kitchen-01",
+      "filename": "interior-kitchen-01-enhanced.webp",
+      "originalFilename": "interior-kitchen-01.jpg",
+      "category": "interior",
+      "usage": "interior_kitchen",
+      "width": 1920,
+      "height": 1280,
+      "blurDataURL": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUABkDASIAAhEBAxEB/8QAGgAAAgMBAQAAAAAAAAAAAAAAAAYDBAUHCP/EACgQAAICAgEDBAEFAAAAAAAAAAECAwQABREGEhMhMUFRYRQiI5Gx/8QAFwEAAwEAAAAAAAAAAAAAAAAAAQIDBP/EABwRAAMBAAIDAAAAAAAAAAAAAAECEQADIRIxQf/aAAwDAQACEQMRAD8A9N6DqGh1FNq/S7KvKk0YlUBlPaSQDj6+MyNv1P07R2TXt7KJEPoVVWkI/oHMvpbSQ1utqlCLDG2vMkSlECgkEAn1+cW/kFaVoQ0sZ7kZP2x+ckXxj2sGCbSd51B3Ps+01x6frbtjqrqzw+WFHVI7C+SkAen+5v7/c0NO/SXtjHTuJ8bpqGlz0xwGV3uNj4lUPYseJ454P3hh5cPIwj4n//Z"
+    },
+    {
+      "id": "team-site-visit",
+      "filename": "team-site-visit-enhanced.webp",
+      "originalFilename": "team-site-visit.jpg",
+      "category": "team",
+      "usage": "about_section",
+      "width": 1920,
+      "height": 1280,
+      "blurDataURL": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUABkDASIAAhEBAxEB/8QAGgAAAgMBAQAAAAAAAAAAAAAAAAYDBAUHCP/EACgQAAICAgEDBAEFAAAAAAAAAAECAwQABREGEhMhMUFRYRQiI5Gx/8QAFwEAAwEAAAAAAAAAAAAAAAAAAQIDBP/EABwRAAMBAAIDAAAAAAAAAAAAAAECEQADIRIxQf/aAAwDAQACEQMRAD8A9N6DqGh1FNq/S7KvKk0YlUBlPaSQDj6+MyNv1P07R2TXt7KJEPoVVWkI/oHMvpbSQ1utqlCLDG2vMkSlECgkEAn1+cW/kFaVoQ0sZ7kZP2x+ckXxj2sGCbSd51B3Ps+01x6frbtjqrqzw+WFHVI7C+SkAen+5v7/c0NO/SXtjHTuJ8bpqGlz0xwGV3uNj4lUPYseJ454P3hh5cPIwj4n//Z"
+    },
+    {
+      "id": "blueprint-planning",
+      "filename": "blueprint-planning-enhanced.webp",
+      "originalFilename": "blueprint-planning.jpg",
+      "category": "team",
+      "usage": "services_section",
+      "width": 1920,
+      "height": 1280,
+      "blurDataURL": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUABkDASIAAhEBAxEB/8QAGgAAAgMBAQAAAAAAAAAAAAAAAAYDBAUHCP/EACgQAAICAgEDBAEFAAAAAAAAAAECAwQABREGEhMhMUFRYRQiI5Gx/8QAFwEAAwEAAAAAAAAAAAAAAAAAAQIDBP/EABwRAAMBAAIDAAAAAAAAAAAAAAECEQADIRIxQf/aAAwDAQACEQMRAD8A9N6DqGh1FNq/S7KvKk0YlUBlPaSQDj6+MyNv1P07R2TXt7KJEPoVVWkI/oHMvpbSQ1utqlCLDG2vMkSlECgkEAn1+cW/kFaVoQ0sZ7kZP2x+ckXxj2sGCbSd51B3Ps+01x6frbtjqrqzw+WFHVI7C+SkAen+5v7/c0NO/SXtjHTuJ8bpqGlz0xwGV3uNj4lUPYseJ454P3hh5cPIwj4n//Z"
+    },
+    {
+      "id": "quality-inspection",
+      "filename": "quality-inspection-enhanced.webp",
+      "originalFilename": "quality-inspection.jpg",
+      "category": "team",
+      "usage": "why_us_section",
+      "width": 1920,
+      "height": 1280,
+      "blurDataURL": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUABkDASIAAhEBAxEB/8QAGgAAAgMBAQAAAAAAAAAAAAAAAAYDBAUHCP/EACgQAAICAgEDBAEFAAAAAAAAAAECAwQABREGEhMhMUFRYRQiI5Gx/8QAFwEAAwEAAAAAAAAAAAAAAAAAAQIDBP/EABwRAAMBAAIDAAAAAAAAAAAAAAECEQADIRIxQf/aAAwDAQACEQMRAD8A9N6DqGh1FNq/S7KvKk0YlUBlPaSQDj6+MyNv1P07R2TXt7KJEPoVVWkI/oHMvpbSQ1utqlCLDG2vMkSlECgkEAn1+cW/kFaVoQ0sZ7kZP2x+ckXxj2sGCbSd51B3Ps+01x6frbtjqrqzw+WFHVI7C+SkAen+5v7/c0NO/SXtjHTuJ8bpqGlz0xwGV3uNj4lUPYseJ454P3hh5cPIwj4n//Z"
+    }
+  ]
+}

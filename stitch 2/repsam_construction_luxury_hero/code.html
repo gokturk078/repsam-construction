@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#c9a74a",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#1f1c13",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"],
+                        "serif": ["Playfair Display", "serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .glass-nav {
+            background: rgba(31, 28, 19, 0.4);
+            backdrop-filter: blur(8px);
+        }
+        .hero-gradient {
+            background: linear-gradient(to bottom, rgba(31, 28, 19, 0.7) 0%, rgba(31, 28, 19, 0.3) 50%, rgba(31, 28, 19, 0.8) 100%);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 overflow-x-hidden">
+<div class="relative min-h-screen flex flex-col">
+<!-- Hero Background -->
+<div class="absolute inset-0 z-0 h-full w-full bg-cover bg-center" data-alt="Luxury modern villa in Kyrenia at golden hour sunset" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBtpFxbYjtANmi5E4_oWPNaLhrdFhKIeIu7fCmiTyNHSp9tiTZuhGiP5bdzy6f3bRsUCWlPqsvqNm9D8ua40U3bciPDXfyP6gvYDae0HCnRmpgq_FTuOKke8VFNLCACMlYCGNozp_KIR_owMa_3rr0NFcC2qba8Wqv7ebUe1Vne_RbC2pYB5z0XPaCGA40ycfyq8NXKkjKD_qforWsr-dzUEdTXFSRaJ_nNV-7eqx0Y8fopmsfRKl23MruySzELtYiGCgAF2vn--wZk');">
+<div class="absolute inset-0 hero-gradient"></div>
+</div>
+<!-- Top Navigation Bar -->
+<nav class="relative z-50 flex items-center justify-between px-8 lg:px-20 py-6 border-b border-white/10 glass-nav">
+<div class="flex items-center gap-2">
+<div class="flex flex-col">
+<span class="font-serif text-2xl font-bold tracking-widest text-white leading-none">REPSAM</span>
+<span class="text-[10px] font-bold tracking-[0.2em] text-primary uppercase leading-none mt-1">CONSTRUCTION &amp; TECHNOLOGY</span>
+</div>
+</div>
+<div class="hidden lg:flex items-center gap-10">
+<a class="text-sm font-medium text-white/90 hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-sm font-medium text-white/90 hover:text-primary transition-colors" href="#">Projects</a>
+<a class="text-sm font-medium text-white/90 hover:text-primary transition-colors" href="#">Services</a>
+<a class="text-sm font-medium text-white/90 hover:text-primary transition-colors" href="#">About Us</a>
+<a class="text-sm font-medium text-white/90 hover:text-primary transition-colors" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="hidden md:flex bg-primary hover:bg-primary/90 text-background-dark text-xs font-bold uppercase tracking-wider px-6 py-3 rounded transition-all duration-300">
+                    Get a Quote
+                </button>
+<button class="lg:hidden text-white">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<!-- Hero Content Section -->
+<main class="relative z-10 flex-grow flex flex-col items-center justify-center px-4 text-center">
+<div class="max-w-4xl space-y-8">
+<div class="inline-block">
+<p class="text-primary text-xs md:text-sm font-bold tracking-[0.4em] uppercase mb-4">
+                        KYRENIA · NORTH CYPRUS · EST. 2014
+                    </p>
+<div class="h-[1px] w-12 bg-primary mx-auto"></div>
+</div>
+<h1 class="font-serif text-5xl md:text-7xl lg:text-8xl text-white font-normal leading-tight">
+                    Building <span class="italic">Dreams</span><br/>Into Reality
+                </h1>
+<p class="text-slate-300 text-base md:text-lg max-w-2xl mx-auto leading-relaxed font-light">
+                    Delivering world-class luxury construction and innovative technology solutions in the Mediterranean since 2014. Where architectural excellence meets technological precision.
+                </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-6">
+<button class="w-full sm:w-auto min-w-[200px] bg-primary hover:bg-primary/90 text-background-dark text-sm font-bold uppercase tracking-widest py-4 px-8 rounded transition-all">
+                        Explore Our Projects
+                    </button>
+<button class="w-full sm:w-auto min-w-[200px] border border-white/40 hover:border-primary hover:text-primary text-white text-sm font-bold uppercase tracking-widest py-4 px-8 rounded transition-all backdrop-blur-sm">
+                        Contact Us Today
+                    </button>
+</div>
+</div>
+</main>
+<!-- Scroll Indicator -->
+<div class="relative z-10 pb-10 flex flex-col items-center gap-4">
+<span class="text-[10px] font-bold tracking-[0.3em] text-white/60 uppercase">Discover Excellence</span>
+<div class="flex flex-col items-center">
+<div class="w-[1px] h-12 bg-gradient-to-b from-primary to-transparent"></div>
+<span class="material-symbols-outlined text-primary mt-2">expand_more</span>
+</div>
+</div>
+<!-- Secondary Bottom Section (Optional stats or Trust bar) -->
+<div class="relative z-10 w-full bg-background-dark/80 backdrop-blur-md border-t border-white/5 py-8 hidden md:block">
+<div class="max-w-7xl mx-auto px-10 grid grid-cols-4 gap-8">
+<div class="flex flex-col items-center">
+<span class="text-primary font-serif text-2xl">10+</span>
+<span class="text-slate-400 text-[10px] uppercase tracking-widest">Years of Expertise</span>
+</div>
+<div class="flex flex-col items-center border-l border-white/10">
+<span class="text-primary font-serif text-2xl">150+</span>
+<span class="text-slate-400 text-[10px] uppercase tracking-widest">Premium Projects</span>
+</div>
+<div class="flex flex-col items-center border-l border-white/10">
+<span class="text-primary font-serif text-2xl">24/7</span>
+<span class="text-slate-400 text-[10px] uppercase tracking-widest">Client Support</span>
+</div>
+<div class="flex flex-col items-center border-l border-white/10">
+<span class="text-primary font-serif text-2xl">Gold</span>
+<span class="text-slate-400 text-[10px] uppercase tracking-widest">Industry Standard</span>
+</div>
+</div>
+</div>
+</div>
+</body></html>
