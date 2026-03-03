@@ -7,6 +7,7 @@ import { ChevronDown } from 'lucide-react'
 import { useLang } from '@/lib/i18n'
 import SmartImage from '@/components/ui/SmartImage'
 import { getHeroImage } from '@/lib/images'
+import MagneticButton from '@/components/ui/MagneticButton'
 
 // Gold dust particles config
 const DUST_PARTICLES = Array.from({ length: 12 }, (_, i) => ({
@@ -151,27 +152,32 @@ export default function Hero() {
                         {t('hero_subtitle')}
                     </motion.p>
 
-                    {/* Buttons — with shimmer */}
+                    {/* Buttons — with shimmer and magnetic effect */}
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 1.2 }}
-                        className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-8 lg:mt-10"
+                        className="flex flex-col sm:flex-row gap-4 sm:gap-6 mt-8 lg:mt-10 items-start sm:items-center"
                     >
-                        <Link
-                            href="/projects"
-                            className="btn-shimmer inline-flex items-center justify-center px-8 lg:px-10 py-4 lg:py-5 bg-brand-gold text-brand-black text-[11px] lg:text-[12px] font-bold tracking-[2px] hover:bg-brand-gold-light transition-all duration-300 min-h-[48px]"
-                            style={{ fontFamily: 'var(--font-montserrat), sans-serif' }}
-                        >
-                            {t('hero_btn1')}
-                        </Link>
-                        <Link
-                            href="/contact"
-                            className="inline-flex items-center justify-center px-8 lg:px-10 py-4 lg:py-5 border border-white/20 text-white text-[11px] lg:text-[12px] font-bold tracking-[2px] hover:border-brand-gold hover:text-brand-gold transition-all duration-300 backdrop-blur-sm min-h-[48px] glow-gold-hover"
-                            style={{ fontFamily: 'Montserrat, sans-serif' }}
-                        >
-                            {t('hero_btn2')}
-                        </Link>
+                        <MagneticButton strength={0.3}>
+                            <Link
+                                href="/projects"
+                                className="btn-shimmer inline-flex items-center justify-center px-10 lg:px-12 py-5 lg:py-6 bg-brand-gold text-brand-black text-[12px] font-bold tracking-[2px] transition-all duration-300 min-h-[48px] shadow-lg shadow-brand-gold/20"
+                                style={{ fontFamily: 'var(--font-montserrat), sans-serif' }}
+                            >
+                                {t('hero_btn1')}
+                            </Link>
+                        </MagneticButton>
+
+                        <MagneticButton strength={0.2}>
+                            <Link
+                                href="/contact"
+                                className="inline-flex items-center justify-center px-10 lg:px-12 py-5 lg:py-6 border border-white/20 text-white text-[12px] font-bold tracking-[2px] hover:border-brand-gold hover:text-brand-gold transition-all duration-300 backdrop-blur-md min-h-[48px] glow-gold-hover"
+                                style={{ fontFamily: 'Montserrat, sans-serif' }}
+                            >
+                                {t('hero_btn2')}
+                            </Link>
+                        </MagneticButton>
                     </motion.div>
 
                     {/* Mini stats */}
@@ -200,8 +206,11 @@ export default function Hero() {
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 1.6 }}
-                className="absolute top-24 right-8 lg:right-16 backdrop-blur-md border border-brand-gold/30 border-pulse px-5 py-4 hidden lg:block glow-gold"
-                style={{ background: 'linear-gradient(135deg, rgba(201,168,92,0.12), rgba(10,10,10,0.95))' }}
+                className="absolute top-24 right-8 lg:right-16 backdrop-blur-xl border border-brand-gold/30 border-pulse px-6 py-5 hidden lg:block glow-gold rounded-sm"
+                style={{
+                    background: 'linear-gradient(135deg, rgba(201,168,76,0.1) 0%, rgba(10,10,10,0.8) 100%)',
+                    boxShadow: '0 20px 40px rgba(0,0,0,0.4), inset 0 0 20px rgba(201,168,76,0.05)'
+                }}
             >
                 <p className="text-brand-gold text-[10px] tracking-[3px]" style={{ fontFamily: 'var(--font-montserrat), sans-serif' }}>
                     {t('hero_badge_line1')}

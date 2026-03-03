@@ -110,22 +110,28 @@ export default function Navbar() {
                     </Link>
 
                     {/* Desktop nav */}
-                    <div className="hidden lg:flex items-center gap-8">
-                        {NAV_LINKS.map((link) => {
+                    <div className="hidden lg:flex items-center gap-10">
+                        {NAV_LINKS.map((link, i) => {
                             const isActive = link.href === '/' ? pathname === '/' : pathname.startsWith(link.href) && link.href !== '/'
                             return (
                                 <Link
                                     key={link.key}
                                     href={link.href}
                                     className={cn(
-                                        'relative text-[13px] tracking-[1px] transition-colors duration-200 py-1',
-                                        isActive ? 'text-brand-gold' : 'text-white/70 hover:text-brand-gold'
+                                        'relative text-[12px] font-bold tracking-[2px] uppercase transition-all duration-300 py-2 animate-blur-in',
+                                        isActive ? 'text-brand-gold' : 'text-white/60 hover:text-brand-gold'
                                     )}
-                                    style={{ fontFamily: 'Montserrat, sans-serif' }}
+                                    style={{
+                                        fontFamily: 'var(--font-montserrat), sans-serif',
+                                        animationDelay: `${0.1 + i * 0.1}s`
+                                    }}
                                 >
                                     {t(link.key)}
                                     {isActive && (
-                                        <span className="absolute bottom-0 left-0 right-0 h-[2px] bg-brand-gold" />
+                                        <motion.span
+                                            layoutId="nav-underline"
+                                            className="absolute bottom-0 left-0 right-0 h-[2px] bg-brand-gold"
+                                        />
                                     )}
                                 </Link>
                             )

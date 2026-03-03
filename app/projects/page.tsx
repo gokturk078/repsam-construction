@@ -6,19 +6,18 @@ import PageHero from '@/components/ui/PageHero'
 import ProjectsGallery from '@/components/home/ProjectsGallery'
 import StatsBar from '@/components/home/StatsBar'
 import CTAStrip from '@/components/home/CTAStrip'
-import { getImageById } from '@/lib/images'
+import { getProjectBySlug } from '@/lib/projects'
 import { useLang } from '@/lib/i18n'
 
 export default function ProjectsPage() {
     const { t } = useLang()
-    const heroImg = getImageById('project-complex-01')
+    const heroProject = getProjectBySlug('project-complex-01')
 
     return (
         <main>
             <Navbar />
             <PageHero
-                imageSrc={heroImg?.src}
-                imageFallback={heroImg?.fallbackSrc}
+                imageSrc={heroProject?.mainImage}
                 alt="Projects"
                 label={t('portfolio_label')}
                 title={t('portfolio_title')}

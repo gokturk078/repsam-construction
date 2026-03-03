@@ -1,13 +1,13 @@
 'use client'
 
 import { useState, useMemo } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
-import { X } from 'lucide-react'
+import { motion } from 'framer-motion'
+import Link from 'next/link'
 import SmartImage from '@/components/ui/SmartImage'
 import SectionLabel from '@/components/ui/SectionLabel'
 import AnimatedSection from '@/components/ui/AnimatedSection'
+import { PROJECTS } from '@/lib/projects'
 import GoldButton from '@/components/ui/GoldButton'
-import { getProjectImages, type ProjectImage } from '@/lib/images'
 import { useLang } from '@/lib/i18n'
 import type { TranslationKey } from '@/lib/i18n'
 
@@ -26,17 +26,14 @@ interface ProjectsGalleryProps {
 }
 
 export default function ProjectsGallery({ showAll = false }: ProjectsGalleryProps) {
-    const { t } = useLang()
+    const { lang, t } = useLang()
     const [activeCategory, setActiveCategory] = useState('all')
-    const [selectedImage, setSelectedImage] = useState<ProjectImage | null>(null)
     const [visibleCount, setVisibleCount] = useState(showAll ? 100 : 9)
 
-    const allImages = useMemo(() => getProjectImages(), [])
-
     const filteredImages = useMemo(() => {
-        if (activeCategory === 'all') return allImages
-        return allImages.filter(img => img.category === activeCategory)
-    }, [activeCategory, allImages])
+        if (activeCategory === 'all') return PROJECTS
+        return PROJECTS.filter(p => p.category === activeCategory)
+    }, [activeCategory])
 
     const displayedImages = filteredImages.slice(0, visibleCount)
 
@@ -72,38 +69,38 @@ export default function ProjectsGallery({ showAll = false }: ProjectsGalleryProp
 
                 {/* Masonry Grid */}
                 <div className="columns-1 md:columns-2 lg:columns-3 gap-4">
-                    {displayedImages.map((image, i) => (
-                        <motion.div
-                            key={image.id}
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.5, delay: i * 0.05 }}
-                            className="relative overflow-hidden mb-4 cursor-pointer group break-inside-avoid"
-                            onClick={() => setSelectedImage(image)}
-                        >
-                            <SmartImage
-                                src={image.src}
-                                fallbackSrc={image.fallbackSrc}
-                                alt={image.id}
-                                width={image.width}
-                                height={image.height}
-                                className="w-full h-auto"
-                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                            />
-                            {/* Hover Overlay */}
-                            <div className="absolute inset-0 bg-gradient-to-t from-brand-black/95 via-brand-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-350 flex flex-col justify-end p-5">
-                                <span
-                                    className="inline-block bg-brand-gold text-brand-black px-3 py-1 text-[10px] tracking-[1px] uppercase mb-2 w-fit"
-                                    style={{ fontFamily: 'Montserrat, sans-serif' }}
-                                >
-                                    {image.category}
-                                </span>
-                                <h4 className="font-serif text-[18px] text-brand-white font-semibold">
-                                    {image.id.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}
-                                </h4>
-                                <span className="text-brand-gold text-[13px] mt-2">{t('view_project')}</span>
-                            </div>
-                        </motion.div>
+                    {displayedImages.map((project, i) => (
+                        <Link key={project.id} href={`/projects/${project.slug}`}>
+                            <motion.div
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.5, delay: i * 0.05 }}
+                                className="relative overflow-hidden mb-4 cursor-pointer group break-inside-avoid"
+                            >
+                                <SmartImage
+                                    src={project.mainImage}
+                                    alt={lang === 'tr' ? project.title_tr : project.title_en}
+                                    width={1200}
+                                    height={800}
+                                    className="w-full h-auto"
+                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                    priority={i < 3}
+                                />
+                                {/* Hover Overlay */}
+                                <div className="absolute inset-0 bg-gradient-to-t from-brand-black/95 via-brand-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-350 flex flex-col justify-end p-5">
+                                    <span
+                                        className="inline-block bg-brand-gold text-brand-black px-3 py-1 text-[10px] tracking-[1px] uppercase mb-2 w-fit"
+                                        style={{ fontFamily: 'Montserrat, sans-serif' }}
+                                    >
+                                        {project.category}
+                                    </span>
+                                    <h4 className="font-serif text-[18px] text-brand-white font-semibold">
+                                        {lang === 'tr' ? project.title_tr : project.title_en}
+                                    </h4>
+                                    <span className="text-brand-gold text-[13px] mt-2">{t('view_project')}</span>
+                                </div>
+                            </motion.div>
+                        </Link>
                     ))}
                 </div>
 
@@ -123,57 +120,6 @@ export default function ProjectsGallery({ showAll = false }: ProjectsGalleryProp
                     </div>
                 )}
             </div>
-
-            {/* Lightbox */}
-            <AnimatePresence>
-                {selectedImage && (
-                    <motion.div
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                        className="fixed inset-0 z-50 bg-brand-black/90 backdrop-blur-lg flex items-center justify-center p-4"
-                        onClick={() => setSelectedImage(null)}
-                    >
-                        <motion.div
-                            initial={{ scale: 0.9, opacity: 0 }}
-                            animate={{ scale: 1, opacity: 1 }}
-                            exit={{ scale: 0.9, opacity: 0 }}
-                            className="max-w-4xl w-full bg-[#111] border border-[#222] overflow-hidden"
-                            onClick={(e) => e.stopPropagation()}
-                        >
-                            <div className="relative aspect-video">
-                                <SmartImage
-                                    src={selectedImage.src}
-                                    fallbackSrc={selectedImage.fallbackSrc}
-                                    alt={selectedImage.id}
-                                    fill
-                                    sizes="(max-width: 1024px) 100vw, 50vw"
-                                    className="object-cover"
-                                />
-                            </div>
-                            <div className="p-6 flex items-center justify-between">
-                                <div>
-                                    <span
-                                        className="text-brand-gold text-[11px] tracking-[2px] uppercase"
-                                        style={{ fontFamily: 'Montserrat, sans-serif' }}
-                                    >
-                                        {selectedImage.category}
-                                    </span>
-                                    <h3 className="font-serif text-[22px] font-bold text-brand-white mt-1">
-                                        {selectedImage.id.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}
-                                    </h3>
-                                </div>
-                                <button
-                                    onClick={() => setSelectedImage(null)}
-                                    className="text-brand-gold hover:text-brand-gold-light transition-colors"
-                                >
-                                    <X size={24} />
-                                </button>
-                            </div>
-                        </motion.div>
-                    </motion.div>
-                )}
-            </AnimatePresence>
         </section>
     )
 }
